@@ -16,6 +16,12 @@ This project concerns the well known tips dataset and the Python packages Seabor
 5. You will need to navigate to this folder location on the command line in order to run the program.
 6. Details on how to run each individual script in this repository is included later in this Readme file.
 
-Adding a line to test commit and push with visual studio code. 
-Testing after viewing video on Moodle page. 
+## jupyter lab
+In completing this project I have set up this repository and created a jupyter lab notebook in which I will write some code to analyse the tips dataset. I viewed the lecture videos on jupyter notebooks and also completed additional reading in order to familiarise myself with jupyter. Both jupyter notebook and jupyter lab were discussed in lecture videos and I also did some additional reading about the differences between both https://ipython-books.github.io/36-introducing-jupyterlab/ and https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906. Following this research I decided to use jupyter lab for my project. 
 
+
+## References 
+**This section contains details on the references and research that went into compiling this project.**
+
+jupyter lab: https://ipython-books.github.io/36-introducing-jupyterlab/
+jupyter lab: https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906
