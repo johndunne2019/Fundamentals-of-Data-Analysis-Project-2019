@@ -10,7 +10,7 @@ This project concerns the well known tips dataset and the Python packages Seabor
 
 ## How to download this repository
 1. Go to GitHub.
-2. Go to my repository: https://github.com/johndunne2019/pands-project
+2. Go to my repository: https://github.com/johndunne2019/Fundamentals-of-Data-Analysis-Project-2019
 3. Click the clone/download button.
 4. Save the repository to a local folder location on your machine.
 5. You will need to navigate to this folder location on the command line in order to run the program.
