@@ -5,6 +5,8 @@ This repository contains my project 2019 for the module Fundamentals of Data Ana
 ## Author
 John Dunne
 
+## About this Project
+This project concerns the well known tips dataset and the Python packages Seaborn and jupyter. In completing this project I will download the tips dataset and use the Python packages Seaborn and jupyter to perform some analysis on the dataset in order to explain the dataset in detail. I will also endeavour to analyse whether there is a relationship between the total bill and tip amount.  
 
 ## How to download this repository
 1. Go to GitHub.
