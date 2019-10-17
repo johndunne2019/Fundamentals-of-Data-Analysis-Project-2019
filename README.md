@@ -40,6 +40,11 @@ The jupyter lab tutorial is here: https://jupyterlab.readthedocs.io/en/stable/
 * The numbers that appears on the left side of the screen on the cells containing code indicate the order in which the commands were passed to the kernel. jupyter remembers the arguments that have been previously passed to the kernel. 
 * The user can reset the kernel and clear output by going to the toolbar in the browser and selecting restart and clear output. When the user sends each argument to the kernel after this point they will see the numbers on the left hand side start again from 1. 
 
+## Seaborn
+Seaborn is a data visualization package within Python which is based on matplotlib. Seaborn can be used to make statistical graphics in Python. 
+The official Seaborn tutorial is here: https://seaborn.pydata.org/index.html and the official Seaborn tutorial is here: https://seaborn.pydata.org/index.html. 
+"Seaborn aims to make visualization a central part of exploring and understanding data. Its dataset-oriented plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots." - Taken from the official Seaborn documentation - https://seaborn.pydata.org/introduction.html
+
 ## What is the Tips dataset?
 
 
@@ -51,3 +56,8 @@ The jupyter lab tutorial is here: https://jupyterlab.readthedocs.io/en/stable/
 * https://ipython-books.github.io/36-introducing-jupyterlab/
 * https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906
 * Youtube tutorials - https://www.youtube.com/watch?v=7wfPqAyYADY and https://www.youtube.com/watch?v=NXwP8pSOiB8
+
+**Seaborn**
+* Seaborn tutorial: https://seaborn.pydata.org/tutorial.html
+* Seaborn documentation: https://seaborn.pydata.org/index.html
+* Youtube: https://www.youtube.com/watch?v=TLdXM0A7SR8
