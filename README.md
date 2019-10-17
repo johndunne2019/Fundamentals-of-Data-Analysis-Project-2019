@@ -14,9 +14,18 @@ This project concerns the well known tips dataset and the Python packages Seabor
 3. Click the clone/download button.
 4. Save the repository to a local folder location on your machine.
 5. You will need to navigate to this folder location on the command line in order to run the program.
-6. Details on how to run each individual script in this repository is included later in this Readme file.
+6. Details on how to view my jupyter notebook are described in the next section below.
 
-## jupyter lab
+## How to run the jupyter notebook
+1. On the command line navigate to the folder location where the repository has been downloaded and saved to using the cd change directory command.
+2. Type jupyter notebook on the command line and press enter
+3. After a short wait jupyter notebook will open in your web browser. 
+4. Open the Tips-Dataset.ipynb notebook in the browser and the notebook containing the code and comments that I wrote for this assignment will be displayed.
+5. if you want to run the code in any cell hold down the shift key and press enter and the command will run and the output wil be displayed in the next cell. 
+6. To change between edit and read mode at any time press the ESC key.
+7. When you have finished viewing the jupyter notebook close the web browser and return to the command line. Press Ctrl + C on the command line to kill the program.
+
+## Jupyter lab
 In completing this project I have set up this repository and created a jupyter lab notebook in which I will write some code to analyse the tips dataset. I viewed the lecture videos on jupyter notebooks and also completed additional reading in order to familiarise myself with jupyter. Both jupyter notebook and jupyter lab were discussed in lecture videos and I also did some additional reading about the differences between both https://ipython-books.github.io/36-introducing-jupyterlab/ and https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906. Following this research I decided to use jupyter lab for my project. 
 The jupyter lab tutorial is here: https://jupyterlab.readthedocs.io/en/stable/
 
@@ -27,9 +36,12 @@ The jupyter lab tutorial is here: https://jupyterlab.readthedocs.io/en/stable/
 * There are 2 different modes when viewing a cell in jupyter, edit mode which appears in green on the left side of the cell and read mode which appears in blue on the left side of the cell.
 * There are 2 different modes that can be used when writing in a jupyter notebook - markdown and code. To move between the 2 modes when writing in a notebook the user can hit the ESC key and then M to move to markdown mode and Y to move to code mode. 
 * When a user wants to execute an argument they should hold down the shift key and press enter and the output will be displayed in the notebook. 
-* There are keyboard shortcuts that can be used, one example is a which adds a new cells above the cell the cursor is currently located in and b which adds a new cell below the cell the cursor is currently located in. A full list of keyboard shortcuts can be accessed in the help section of the jupyter browser. 
+* There are keyboard shortcuts that can be used, one example is a which adds "a" new cells above the cell the cursor is currently located in and "b" which adds a new cell below the cell the cursor is currently located in. A full list of keyboard shortcuts can be accessed in the help section of the jupyter browser. 
 * The numbers that appears on the left side of the screen on the cells containing code indicate the order in which the commands were passed to the kernel. jupyter remembers the arguments that have been previously passed to the kernel. 
 * The user can reset the kernel and clear output by going to the toolbar in the browser and selecting restart and clear output. When the user sends each argument to the kernel after this point they will see the numbers on the left hand side start again from 1. 
+
+## What is the Tips dataset?
+
 
 ## References 
 **This section contains details on the references and research that went into compiling this project.**
