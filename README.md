@@ -56,6 +56,8 @@ The official Seaborn tutorial is here: https://seaborn.pydata.org/index.html and
 * https://ipython-books.github.io/36-introducing-jupyterlab/
 * https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906
 * Youtube tutorials - https://www.youtube.com/watch?v=7wfPqAyYADY and https://www.youtube.com/watch?v=NXwP8pSOiB8
+* How to change a cell to markdown: https://stackoverflow.com/questions/47787721/shortcut-key-for-changing-code-cell-to-markdown-cell-in-jupyter-notebook
+* How to restart the kernel following instructions in lecture video: https://web.microsoftstream.com/video/31d34f49-725f-45bf-9e93-5f0594e69427?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D1127
 
 **Seaborn**
 * Seaborn tutorial: https://seaborn.pydata.org/tutorial.html
