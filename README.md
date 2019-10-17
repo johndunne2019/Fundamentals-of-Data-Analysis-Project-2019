@@ -46,7 +46,12 @@ The official Seaborn tutorial is here: https://seaborn.pydata.org/index.html and
 "Seaborn aims to make visualization a central part of exploring and understanding data. Its dataset-oriented plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots." - Taken from the official Seaborn documentation - https://seaborn.pydata.org/introduction.html
 
 ## What is the Tips dataset?
+
+![Image of the tips data set](https://www.google.com/search?q=tips+data+set&sxsrf=ACYBGNRfFuEuf1RlLGWry_6hpD6ftaCzIQ:1571345620976&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj21LrMlqTlAhUytXEKHS3IB-8Q_AUIEigB&biw=1366&bih=625#imgrc=8oxFzMz71eKvWM:)
+
 The tips dataset can be viewed at this link: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv which is saved in this repository: https://github.com/mwaskom/seaborn-data. The purpose of this repository is that the seaborn.load function when called downloads the csv tips data set from this location. This is convenient in that the user does not have to download the csv file to their own repository or machine in order to create analytics based on the data set. 
+I have downloaded the Tips from this repository and saved it in my repository at this link: https://github.com/johndunne2019/Fundamentals-of-Data-Analysis-Project-2019/blob/master/Tips.csv. 
+The Tips dataset is a 
 
 ## References 
 **This section contains details on the references and research that went into compiling this project.**
