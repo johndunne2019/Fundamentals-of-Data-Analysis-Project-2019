@@ -93,3 +93,7 @@ The Tips dataset is a
 * Repository from which seaborn.load reads the data set from: https://github.com/mwaskom/seaborn-data
 * Direct link to the data set csv file: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv
 * Seaborn.load https://stackoverflow.com/questions/30336324/seaborn-load-dataset
+
+**pandas - Python Data Analysis Library**
+* pandas.read_csv documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
+* Blog post on reading in csv files with pandas: https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
