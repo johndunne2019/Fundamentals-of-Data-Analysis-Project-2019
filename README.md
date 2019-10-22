@@ -95,6 +95,9 @@ The Tips dataset is a
 * Seaborn.load https://stackoverflow.com/questions/30336324/seaborn-load-dataset
 
 **pandas - Python Data Analysis Library**
+* pandas documentation: https://pandas.pydata.org/
+* 10 minutes to pandas: https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
+* Wes McKinney - 10-minute tour of pandas - https://www.youtube.com/watch?v=_T8LGqJtuGc
 * pandas.read_csv documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
 * Blog post on reading in csv files with pandas: https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
 * Dataframe.head documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html
@@ -103,3 +106,6 @@ The Tips dataset is a
 * Percentile: https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/percentiles-rank-range/
 * Dataframe.shape documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html
 * jupyter notebook pandas descriptive statistics example covered in lecture: https://nbviewer.jupyter.org/github/ianmcloughlin/jupyter-teaching-notebooks/blob/master/pandas-with-iris.ipynb
+* Dataframe.loc documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html
+* Dataframe.iloc documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html
+* Dataframe.mean documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mean.html
