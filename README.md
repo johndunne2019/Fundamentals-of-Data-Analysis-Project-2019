@@ -99,3 +99,6 @@ The Tips dataset is a
 * Blog post on reading in csv files with pandas: https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
 * Dataframe.head documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html
 * Dataframe.tail documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html
+* Dataframe.describe(): https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
+* Percentile: https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/percentiles-rank-range/
+* Dataframe.shape documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html
