@@ -25,6 +25,26 @@ This project concerns the well known tips dataset and the Python packages Seabor
 6. To change between edit and read mode at any time press the ESC key.
 7. When you have finished viewing the jupyter notebook close the web browser and return to the command line. Press Ctrl + C on the command line to kill the program.
 
+## Plan for completing this assessment
+**I will break the assessment into 3 sections of work containing subsections:**
+
+1. Description:
+* Create a git repository and make it available online.
+* Within the git repository create a jupyter notebook.
+* Download the Tips Data set and within the jupyter notebook use some descriptive analysis on the data set. 
+* Try to use the Seaborn and pandas packages to describe the data set. 
+
+2. Regression:
+* Add a section to the jupyter notebook that discusses and analyses whether there is a relationship between total bill and tip amount. 
+
+3. Analyse:
+* Analyse the relationship between the variables in the Tips data set. 
+
+**In addition to the above I will:**
+* Keep a detailed list of all references and reading I complete and make these available.
+* Provide details in this Readme file on the packages I have used to analyse the Tips data set. 
+* Provide an overview of the Tips data set and the analysis I have conducted within this Readme file.
+
 ## Jupyter lab
 In completing this project I have set up this repository and created a jupyter lab notebook in which I will write some code to analyse the tips dataset. I viewed the lecture videos on jupyter notebooks and also completed additional reading in order to familiarise myself with jupyter. Both jupyter notebook and jupyter lab were discussed in lecture videos and I also did some additional reading about the differences between both https://ipython-books.github.io/36-introducing-jupyterlab/ and https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906. Following this research I decided to use jupyter lab for my project. 
 The jupyter lab tutorial is here: https://jupyterlab.readthedocs.io/en/stable/
