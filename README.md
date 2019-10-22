@@ -28,16 +28,16 @@ This project concerns the well known tips dataset and the Python packages Seabor
 ## Plan for completing this assessment
 **I will break the assessment into 3 sections of work containing subsections:**
 
-1. Description:
+**1. Description:**
 * Create a git repository and make it available online.
 * Within the git repository create a jupyter notebook.
 * Download the Tips Data set and within the jupyter notebook use some descriptive analysis on the data set. 
 * Try to use the Seaborn and pandas packages to describe the data set. 
 
-2. Regression:
+**2. Regression:**
 * Add a section to the jupyter notebook that discusses and analyses whether there is a relationship between total bill and tip amount. 
 
-3. Analyse:
+**3. Analyse:**
 * Analyse the relationship between the variables in the Tips data set. 
 
 **In addition to the above I will:**
