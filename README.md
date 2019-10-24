@@ -45,6 +45,30 @@ This project concerns the well known tips dataset and the Python packages Seabor
 * Provide details in this Readme file on the packages I have used to analyse the Tips data set. 
 * Provide an overview of the Tips data set and the analysis I have conducted within this Readme file.
 
+## What is the Tips dataset?
+
+The tips dataset can be viewed at this link: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv which is saved in this repository: https://github.com/mwaskom/seaborn-data. The purpose of this repository is that the seaborn.load function when called downloads the csv tips data set from this location. This is convenient in that the user does not have to download the csv file to their own repository or machine in order to create analytics based on the data set. 
+I have downloaded the Tips from this repository and saved it in my repository at this link: https://github.com/johndunne2019/Fundamentals-of-Data-Analysis-Project-2019/blob/master/Tips.csv. 
+
+I found the below explanation on the background and contents of the Tips data set online: 
+
+"In one restaurant, a food server recorded the following data on all customers they served during an interval of two and a half months in early 1990. The restaurant, located in a suburban shopping mall, was part of a national chain and served a varied menu. In observance of local law, the restaurant offered to seat in a non-smoking section to patrons who requested it. Each record includes a day and time, and taken together, they show the server’s work schedule."
+
+Quote taken from: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
+
+**What data is captured in the Tips dataset?**
+The following is a breakdown of the data that is captured in the Tips dataset:
+* There are 244 rows and 7 columns of data in the Tips data set. 
+* The first column is called total_bill and this is the total amount of each bill in US dollars. 
+* The second column is called tip and is the amount of the tip (gratuity) given by each party in US dollars.  
+* The third column is the sex of the person paying for the bill. 
+* The fourth column records if there was a smoker among the party ie- if the party sat in the smoking or non smoking section of the restaurant. 
+* The fifth column of data shows the day of the week. 
+* The sixth column of data shows the time of day- dinner or lunch. 
+* The seventh and final column records the size of the party. 
+
+## Python packages I used in my analysis of the Tips dataset
+
 ## Jupyter lab
 In completing this project I have set up this repository and created a jupyter lab notebook in which I will write some code to analyse the tips dataset. I viewed the lecture videos on jupyter notebooks and also completed additional reading in order to familiarise myself with jupyter. Both jupyter notebook and jupyter lab were discussed in lecture videos and I also did some additional reading about the differences between both https://ipython-books.github.io/36-introducing-jupyterlab/ and https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906. Following this research I decided to use jupyter lab for my project. 
 The jupyter lab tutorial is here: https://jupyterlab.readthedocs.io/en/stable/
@@ -65,17 +89,6 @@ Seaborn is a data visualization package within Python which is based on matplotl
 The official Seaborn documentation is here: https://seaborn.pydata.org/index.html and the official Seaborn tutorial is here: https://seaborn.pydata.org/index.html. 
 
 "Seaborn aims to make visualization a central part of exploring and understanding data. Its dataset-oriented plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots." - Taken from the official Seaborn documentation - https://seaborn.pydata.org/introduction.html
-
-## What is the Tips dataset?
-
-![Image of the tips data set](https://en.wikipedia.org/wiki/Gratuity#/media/File:20151007_174039-S.jpg)
-
-The tips dataset can be viewed at this link: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv which is saved in this repository: https://github.com/mwaskom/seaborn-data. The purpose of this repository is that the seaborn.load function when called downloads the csv tips data set from this location. This is convenient in that the user does not have to download the csv file to their own repository or machine in order to create analytics based on the data set. 
-I have downloaded the Tips from this repository and saved it in my repository at this link: https://github.com/johndunne2019/Fundamentals-of-Data-Analysis-Project-2019/blob/master/Tips.csv. 
-
-I found the below explanation on the background and contents of the Tips data set online: "In one restaurant, a food server recorded the following data on all cus- tomers they served during an interval of two and a half months in early 1990. The restaurant, located in a suburban shopping mall, was part of a national chain and served a varied menu. In observance of local law, the restaurant offered to seat in a non-smoking section to patrons who requested it. Each record includes a day and time, and taken together, they show the server’s work schedule."
-
-Quote taken from: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
 
 ## References 
 **This section contains details on the references and research that went into compiling this project.**
