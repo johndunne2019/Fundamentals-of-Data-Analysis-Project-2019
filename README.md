@@ -90,6 +90,22 @@ The official Seaborn documentation is here: https://seaborn.pydata.org/index.htm
 
 "Seaborn aims to make visualization a central part of exploring and understanding data. Its dataset-oriented plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots." - Taken from the official Seaborn documentation - https://seaborn.pydata.org/introduction.html
 
+## pandas
+Python Data Analysis Library is a Python package than can be used to analyse data sets such as the Tips data set. I used pandas to do some basic descriptive statistics on the Tips data set. pandas can deal with both strings and floating point numbers and so is a good package to use to analyse the Tips data set. The official pandas documentation is located here: https://pandas.pydata.org/ and there is a useful tutorial here: 10 minutes to pandas: https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html. 
+
+
+**Some of the functions within pandas that I used to analyse the dataset**
+* pandas.read_csv to read in the csv file to the pandas package. 
+* dataframe.head() to display the first 5 rows of the dataset. 
+* dataframe.tail() to display the last 5 rows of the dataset.
+* dataframe.describe() to return an overview of some basic statistics based on the dataset. 
+* dataframe.shape() to return the number of rows and columns in the dataset. 
+* dataframe.iloc to return a particular row of data from the dataset. 
+* dataframe.loc to return all rows of data in the dataset that have a certain condition such as all "male" and "smoker". 
+* dataframe.mean to return the mean of a row of data in the dataset.
+* dataframe.std to return the standard deviation of a row of data in the dataset. 
+
+
 ## References 
 **This section contains details on the references and research that went into compiling this project.**
 
