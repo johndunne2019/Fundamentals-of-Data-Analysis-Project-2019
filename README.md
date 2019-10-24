@@ -62,7 +62,8 @@ The jupyter lab tutorial is here: https://jupyterlab.readthedocs.io/en/stable/
 
 ## Seaborn
 Seaborn is a data visualization package within Python which is based on matplotlib. Seaborn can be used to make statistical graphics in Python. 
-The official Seaborn tutorial is here: https://seaborn.pydata.org/index.html and the official Seaborn tutorial is here: https://seaborn.pydata.org/index.html. 
+The official Seaborn documentation is here: https://seaborn.pydata.org/index.html and the official Seaborn tutorial is here: https://seaborn.pydata.org/index.html. 
+
 "Seaborn aims to make visualization a central part of exploring and understanding data. Its dataset-oriented plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots." - Taken from the official Seaborn documentation - https://seaborn.pydata.org/introduction.html
 
 ## What is the Tips dataset?
@@ -71,7 +72,10 @@ The official Seaborn tutorial is here: https://seaborn.pydata.org/index.html and
 
 The tips dataset can be viewed at this link: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv which is saved in this repository: https://github.com/mwaskom/seaborn-data. The purpose of this repository is that the seaborn.load function when called downloads the csv tips data set from this location. This is convenient in that the user does not have to download the csv file to their own repository or machine in order to create analytics based on the data set. 
 I have downloaded the Tips from this repository and saved it in my repository at this link: https://github.com/johndunne2019/Fundamentals-of-Data-Analysis-Project-2019/blob/master/Tips.csv. 
-The Tips dataset is a 
+
+I found the below explanation on the background and contents of the Tips data set online: "In one restaurant, a food server recorded the following data on all cus- tomers they served during an interval of two and a half months in early 1990. The restaurant, located in a suburban shopping mall, was part of a national chain and served a varied menu. In observance of local law, the restaurant offered to seat in a non-smoking section to patrons who requested it. Each record includes a day and time, and taken together, they show the server’s work schedule."
+
+Quote taken from: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
 
 ## References 
 **This section contains details on the references and research that went into compiling this project.**
@@ -93,6 +97,7 @@ The Tips dataset is a
 * Repository from which seaborn.load reads the data set from: https://github.com/mwaskom/seaborn-data
 * Direct link to the data set csv file: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv
 * Seaborn.load https://stackoverflow.com/questions/30336324/seaborn-load-dataset
+* Background of the Tips dataset: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
 
 **pandas - Python Data Analysis Library**
 * pandas documentation: https://pandas.pydata.org/
