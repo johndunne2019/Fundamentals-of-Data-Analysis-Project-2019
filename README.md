@@ -121,6 +121,8 @@ Python Data Analysis Library is a Python package than can be used to analyse dat
 * Seaborn tutorial: https://seaborn.pydata.org/tutorial.html
 * Seaborn documentation: https://seaborn.pydata.org/index.html
 * Youtube: https://www.youtube.com/watch?v=TLdXM0A7SR8
+* The documentation for seaborn.pairplot is here: https://seaborn.pydata.org/generated/seaborn.pairplot.html
+* I read about seaborn.pairplot on the following blog post: https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166
 
 **Tips Data set**
 * Repository from which seaborn.load reads the data set from: https://github.com/mwaskom/seaborn-data
