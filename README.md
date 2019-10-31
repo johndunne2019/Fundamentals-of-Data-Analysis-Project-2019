@@ -116,6 +116,7 @@ Python Data Analysis Library is a Python package than can be used to analyse dat
 * Youtube tutorials - https://www.youtube.com/watch?v=7wfPqAyYADY and https://www.youtube.com/watch?v=NXwP8pSOiB8
 * How to change a cell to markdown: https://stackoverflow.com/questions/47787721/shortcut-key-for-changing-code-cell-to-markdown-cell-in-jupyter-notebook
 * How to restart the kernel following instructions in lecture video: https://web.microsoftstream.com/video/31d34f49-725f-45bf-9e93-5f0594e69427?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D1127
+* Centering text in a markdown cell: https://stackoverflow.com/questions/21722731/centering-headings-in-ipython-notebook?rq=1
 
 **Seaborn**
 * Seaborn tutorial: https://seaborn.pydata.org/tutorial.html
