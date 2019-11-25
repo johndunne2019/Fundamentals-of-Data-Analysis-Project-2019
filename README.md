@@ -45,28 +45,6 @@ This project concerns the well known tips dataset and the Python packages Seabor
 * Provide details in this Readme file on the packages I have used to analyse the Tips data set. 
 * Provide an overview of the Tips data set and the analysis I have conducted within this Readme file.
 
-## What is the Tips dataset?
-
-The tips dataset can be viewed at this link: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv which is saved in this repository: https://github.com/mwaskom/seaborn-data. The purpose of this repository is that the seaborn.load function when called downloads the csv tips data set from this location. This is convenient in that the user does not have to download the csv file to their own repository or machine in order to create analytics based on the data set. 
-I have downloaded the Tips from this repository and saved it in my repository at this link: https://github.com/johndunne2019/Fundamentals-of-Data-Analysis-Project-2019/blob/master/Tips.csv. 
-
-I found the below explanation on the background and contents of the Tips data set online: 
-
-"In one restaurant, a food server recorded the following data on all customers they served during an interval of two and a half months in early 1990. The restaurant, located in a suburban shopping mall, was part of a national chain and served a varied menu. In observance of local law, the restaurant offered to seat in a non-smoking section to patrons who requested it. Each record includes a day and time, and taken together, they show the server’s work schedule."
-
-Quote taken from: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
-
-**What data is captured in the Tips dataset?**
-The following is a breakdown of the data that is captured in the Tips dataset:
-* There are 244 rows and 7 columns of data in the Tips data set. 
-* The first column is called total_bill and this is the total amount of each bill in US dollars. 
-* The second column is called tip and is the amount of the tip (gratuity) given by each party in US dollars.  
-* The third column is the sex of the person paying for the bill. 
-* The fourth column records if there was a smoker among the party ie- if the party sat in the smoking or non smoking section of the restaurant. 
-* The fifth column of data shows the day of the week. 
-* The sixth column of data shows the time of day- dinner or lunch. 
-* The seventh and final column records the size of the party. 
-
 ## Python packages I used in my analysis of the Tips dataset
 
 ## Jupyter lab
@@ -93,7 +71,6 @@ The official Seaborn documentation is here: https://seaborn.pydata.org/index.htm
 ## pandas
 Python Data Analysis Library is a Python package than can be used to analyse data sets such as the Tips data set. I used pandas to do some basic descriptive statistics on the Tips data set. pandas can deal with both strings and floating point numbers and so is a good package to use to analyse the Tips data set. The official pandas documentation is located here: https://pandas.pydata.org/ and there is a useful tutorial here: 10 minutes to pandas: https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html. 
 
-
 **Some of the functions within pandas that I used to analyse the dataset**
 * pandas.read_csv to read in the csv file to the pandas package. 
 * dataframe.head() to display the first 5 rows of the dataset. 
@@ -103,7 +80,77 @@ Python Data Analysis Library is a Python package than can be used to analyse dat
 * dataframe.iloc to return a particular row of data from the dataset. 
 * dataframe.loc to return all rows of data in the dataset that have a certain condition such as all "male" and "smoker". 
 * dataframe.mean to return the mean of a row of data in the dataset.
-* dataframe.std to return the standard deviation of a row of data in the dataset. 
+* dataframe.std to return the standard deviation of a row of data in the dataset.
+
+## Scikit learn
+
+## matplotlib
+
+
+## My jupyter lab notebook 
+
+## Table of Contents
+* Section 0: Introduction to the Tips data set
+* Section 1: Descriptive Statistics and Plots to describe the Tips data set
+    * Section 1.1: pandas to describe and analyse the Tips data set
+    * Section 1.2: Seaborn to visualise the Tips data set
+* Section 2: Regression
+    * Section 2.1: Introduction to Regression
+    * Section 2.2: Seaborn Linear Regression
+    * Section 2.3: Simple linear regression - best fit line
+    * Section 2.4: Scikit learn to analyse the linear relationship between total bill and tip amount
+* Section 3: Relationship between the variables in the Tips data set
+    * Section 3.1: Seaborn.pairplot
+    * Section 2.2: Seaborn.catplot
+    * Section 3.3: pandas and seaborn to analyse relationship between variables in the data set
+* Section 4: Conclusion
+
+
+## Section 0: Introduction to the Tips data set
+
+The tips dataset can be viewed at this link: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv which is saved in this repository: https://github.com/mwaskom/seaborn-data. The purpose of this repository is that the seaborn.load function when called downloads the csv tips data set from this location. This is convenient in that the user does not have to download the csv file to their own repository or machine in order to create analytics based on the data set. 
+I have downloaded the Tips from this repository and saved it in my repository at this link: https://github.com/johndunne2019/Fundamentals-of-Data-Analysis-Project-2019/blob/master/Tips.csv. 
+
+I found the below explanation on the background and contents of the Tips data set online: 
+
+"In one restaurant, a food server recorded the following data on all customers they served during an interval of two and a half months in early 1990. The restaurant, located in a suburban shopping mall, was part of a national chain and served a varied menu. In observance of local law, the restaurant offered to seat in a non-smoking section to patrons who requested it. Each record includes a day and time, and taken together, they show the server’s work schedule."
+
+Quote taken from: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
+
+**What data is captured in the Tips dataset?**
+The following is a breakdown of the data that is captured in the Tips dataset:
+* There are 244 rows and 7 columns of data in the Tips data set. 
+* The first column is called total_bill and this is the total amount of each bill in US dollars. 
+* The second column is called tip and is the amount of the tip (gratuity) given by each party in US dollars.  
+* The third column is the sex of the person paying for the bill. 
+* The fourth column records if there was a smoker among the party ie- if the party sat in the smoking or non smoking section of the restaurant. 
+* The fifth column of data shows the day of the week. 
+* The sixth column of data shows the time of day- dinner or lunch. 
+* The seventh and final column records the size of the party. 
+
+## Section 1: Descriptive Statistics and Plots to describe the Tips data set
+
+The Python packages I used in section 1 to perform some analysis on the data set were:
+
+* pandas
+
+I read in the data set with pandas and returned some descriptive statistics about the data set using some functions within the pandas library.
+
+* Seaborn
+
+I used Seaborn to read in the data set and output some plots based on the data set and I explained how the different types of plots work and why they would be used in analysing a data set.
+
+##  Section 2: Regression
+
+In this section I discussed and analysed whether there is a relationship between the total bill and tip amount. I did this by using Seaborn to plot the regression line with the lmplot() and regplot() functions. I also added a section to the jupyter notebook looking at simple linear regression and the best fit line. The slope, intercept and R Squared values of a best fit line can be calculated using numpy.polyfit or by using a calculation that I have explained in the notebook. I added another section looking at how Scikit learn can be used to calculate the slope, intercept and R Squared values of the best fit line. The results of this regression analysis showed there is a relationship between total bill and tip amounts. The R-squared value of the best fit line is: 0.45661658635167635 which shows that 45.6% of the data is accounted for by the regression model. This shows that their is a reasonably strong relationship between total bill and tip amount but that other factors may also play their part in determining tip amount etc.
+
+## Section 3: Relationship between the variables in the Tips data set
+
+In this section I analysed the relationship between some of the variables in the data set. I used Seaborn.Pairplot to plot the relationship between variables in a data set. 
+ 
+ TO BE FINISHED LATER
+
+
 
 
 ## References 
@@ -117,34 +164,3 @@ Python Data Analysis Library is a Python package than can be used to analyse dat
 * How to change a cell to markdown: https://stackoverflow.com/questions/47787721/shortcut-key-for-changing-code-cell-to-markdown-cell-in-jupyter-notebook
 * How to restart the kernel following instructions in lecture video: https://web.microsoftstream.com/video/31d34f49-725f-45bf-9e93-5f0594e69427?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D1127
 * Centering text in a markdown cell: https://stackoverflow.com/questions/21722731/centering-headings-in-ipython-notebook?rq=1
-
-**Seaborn**
-* Seaborn tutorial: https://seaborn.pydata.org/tutorial.html
-* Seaborn documentation: https://seaborn.pydata.org/index.html
-* Youtube: https://www.youtube.com/watch?v=TLdXM0A7SR8
-* The documentation for seaborn.pairplot is here: https://seaborn.pydata.org/generated/seaborn.pairplot.html
-* I read about seaborn.pairplot on the following blog post: https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166
-* Seaborn pairplot: https://pythonbasics.org/seaborn_pairplot/
-
-
-**Tips Data set**
-* Repository from which seaborn.load reads the data set from: https://github.com/mwaskom/seaborn-data
-* Direct link to the data set csv file: https://github.com/mwaskom/seaborn-data/blob/master/tips.csv
-* Seaborn.load https://stackoverflow.com/questions/30336324/seaborn-load-dataset
-* Background of the Tips dataset: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
-
-**pandas - Python Data Analysis Library**
-* pandas documentation: https://pandas.pydata.org/
-* 10 minutes to pandas: https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
-* Wes McKinney - 10-minute tour of pandas - https://www.youtube.com/watch?v=_T8LGqJtuGc
-* pandas.read_csv documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
-* Blog post on reading in csv files with pandas: https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
-* Dataframe.head documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html
-* Dataframe.tail documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html
-* Dataframe.describe(): https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
-* Percentile: https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/percentiles-rank-range/
-* Dataframe.shape documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html
-* jupyter notebook pandas descriptive statistics example covered in lecture: https://nbviewer.jupyter.org/github/ianmcloughlin/jupyter-teaching-notebooks/blob/master/pandas-with-iris.ipynb
-* Dataframe.loc documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html
-* Dataframe.iloc documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html
-* Dataframe.mean documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mean.html
