@@ -81,6 +81,7 @@ Python Data Analysis Library is a Python package than can be used to analyse dat
 * dataframe.loc to return all rows of data in the dataset that have a certain condition such as all "male" and "smoker". 
 * dataframe.mean to return the mean of a row of data in the dataset.
 * dataframe.std to return the standard deviation of a row of data in the dataset.
+* dataframe.groupby to group the data set by variable.
 
 ## Scikit learn
 
@@ -142,19 +143,39 @@ I used Seaborn to read in the data set and output some plots based on the data s
 
 ##  Section 2: Regression
 
-In this section I discussed and analysed whether there is a relationship between the total bill and tip amount. I did this by using Seaborn to plot the regression line with the lmplot() and regplot() functions. I also added a section to the jupyter notebook looking at simple linear regression and the best fit line. The slope, intercept and R Squared values of a best fit line can be calculated using numpy.polyfit or by using a calculation that I have explained in the notebook. I added another section looking at how Scikit learn can be used to calculate the slope, intercept and R Squared values of the best fit line. The results of this regression analysis showed there is a relationship between total bill and tip amounts. The R-squared value of the best fit line is: 0.45661658635167635 which shows that 45.6% of the data is accounted for by the regression model. This shows that their is a reasonably strong relationship between total bill and tip amount but that other factors may also play their part in determining tip amount etc.
+In this section I discussed and analysed whether there is a relationship between the total bill and tip amount. I did this by using Seaborn to plot the regression line with the lmplot() and regplot() functions. I also added a section to the jupyter notebook looking at simple linear regression and the best fit line. The slope, intercept and R Squared values of a best fit line can be calculated using numpy.polyfit or by using a calculation that I have explained in the notebook. I added another section looking at how Scikit learn can be used to calculate the slope, intercept and R Squared values of the best fit line. 
+
+**Regression - main findings:**
+* The results of this regression analysis showed there is a relationship between total bill and tip amounts.
+* The R-squared value of the best fit line is: 0.45661658635167635 which shows that 45.6% of the data is accounted for by the regression model.
+* The slope of the best fit line was returned as: 0.10502452
+* The y intercept of the best fit line was returned as: 0.92026961
+* This shows that their is a reasonably strong relationship between total bill and tip amount but that other factors may also play their part in determining tip amount etc.
+
 
 ## Section 3: Relationship between the variables in the Tips data set
 
-In this section I analysed the relationship between some of the variables in the data set. I used Seaborn.Pairplot to plot the relationship between variables in a data set. 
- 
+In this section I analysed the relationship between some of the variables in the data set. I used Seaborn.Pairplot to plot the relationship between variables in the data set. I also used Seaborn.catplot to plot the relationship between total bill and tip amounts and the smoker variable in the Tips data set. I used pandas to analyse the relationship between some of the variables in the Tips data set and Seaborn to plot some different views of the relationship between these variables. I used the groupby function within pandas to group the total bill and tip amounts by some of the variables in the data set such as smoker, sex, day, time and day and time combined. This allowed me to calculate the mean and sum amounts broken out by these variables in order to see if any relationship exists between these variables and the bill and tip amounts. I used Seaborn to plot some of the findings.
+
+**Relationship between variables- main findings:**
+ * There is a relationship between total bill and tip amounts. The higher the total bill amount, the higher the tip amount generally is.
+ * Looking at the other variables in the data set:
+    * **Smoker:**
+    Over the course of the 4 days non smoker accounted for higher bill and tip revenue than smoker.
+    * **Sex:**
+
+
+    * **Day:**
+
+    * **Time:**
+
  TO BE FINISHED LATER
 
 
 
 
 ## References 
-**This section contains details on the references and research that went into compiling this project.**
+**This section contains details on the references and research that went into compiling this project. These references are also listed throughout my jupyter notebook at the foot of each relevant section.**
 
 **Jupyter lab** 
 * Jupyter lab documentation - https://jupyterlab.readthedocs.io/en/stable/
@@ -164,3 +185,100 @@ In this section I analysed the relationship between some of the variables in the
 * How to change a cell to markdown: https://stackoverflow.com/questions/47787721/shortcut-key-for-changing-code-cell-to-markdown-cell-in-jupyter-notebook
 * How to restart the kernel following instructions in lecture video: https://web.microsoftstream.com/video/31d34f49-725f-45bf-9e93-5f0594e69427?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D1127
 * Centering text in a markdown cell: https://stackoverflow.com/questions/21722731/centering-headings-in-ipython-notebook?rq=1
+
+**Section 1.1 References**
+* pandas.read_csv documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
+* Blog post on reading in csv files with pandas: https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
+* Dataframe.head documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html
+* Dataframe.tail documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html
+* Dataframe.describe(): https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
+* Percentile: https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/percentiles-rank-range/
+* Dataframe.shape documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html
+* jupyter notebook pandas descriptive statistics example covered in lecture: https://nbviewer.jupyter.org/github/ianmcloughlin/jupyter-teaching-notebooks/blob/master/pandas-with-iris.ipynb
+* Dataframe.loc documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html
+* Dataframe.iloc documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html
+* Dataframe.mean documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mean.html
+* Dataframe.std() documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.std.html
+* pandas.DataFrame.groupby: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html
+* pandas groupby: https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
+* astype(int): https://stackoverflow.com/questions/45451189/in-pandas-can-you-aggregate-by-mean-and-round-that-mean-to-the-nearest-int
+* pandas sum: https://data36.com/pandas-tutorial-2-aggregation-and-grouping/
+* Dataframe.sum(): https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sum.html
+* pandas.groupby in action: https://data36.com/pandas-tutorial-2-aggregation-and-grouping/
+* Blog post: https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
+* Dataframe.round(): https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.round.html
+* df.info() documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.info.html
+* Dataframe.astype documentation: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.astype.html
+
+**Section 1.2 References**
+* Seaborn tutorial: https://seaborn.pydata.org/tutorial.html
+* Seaborn documentation: https://seaborn.pydata.org/index.html
+* Youtube: https://www.youtube.com/watch?v=TLdXM0A7SR8
+* Seaborn.load_dataset documentation: https://seaborn.pydata.org/generated/seaborn.load_dataset.html
+* Some further reading on loading in data set: https://www.datacamp.com/community/tutorials/seaborn-python-tutorial#load
+* Seaborn.replot documentation: https://seaborn.pydata.org/generated/seaborn.relplot.html#seaborn.relplot
+* Plotting in Seaborn: https://www.datacamp.com/community/tutorials/seaborn-python-tutorial#load
+* The seaborn.distplot documentation: https://seaborn.pydata.org/generated/seaborn.distplot.html
+* Plotting with distplot: https://pythonbasics.org/seaborn-distplot/
+* The seaborn.countplot documentation: https://seaborn.pydata.org/generated/seaborn.countplot.html
+
+**Section 2.1 and 2.2 References**
+* What is Regression Analysis and Why Should I Use It?: https://www.surveygizmo.com/resources/blog/regression-analysis/
+* A refresher on regression analysis: https://hbr.org/2015/11/a-refresher-on-regression-analysis
+* Simple Linear Regression with NumPy- https://github.com/ianmcloughlin/jupyter-teaching-notebooks/raw/master/simple-linear-regression.ipynb
+* Linear regression in Python: https://realpython.com/linear-regression-in-python/#regression
+* Seaborn regression plots: https://www.geeksforgeeks.org/seaborn-regression-plots/
+* Seaborn visualising linear relationships: https://seaborn.pydata.org/tutorial/regression.html
+* Seaborn.lmplot: https://seaborn.pydata.org/generated/seaborn.lmplot.html#seaborn.lmplot
+* Seaborn.regplot(): https://seaborn.pydata.org/generated/seaborn.regplot.html#seaborn.regplot
+
+**Section 2.3 References:**
+* Simple Linear Regression with NumPy - https://nbviewer.jupyter.org/github/ianmcloughlin/jupyter-teaching-notebooks/blob/master/simple-linear-regression.ipynb
+* Introduction to linear regression: http://onlinestatbook.com/2/regression/intro.html
+* Line of best fit: https://www.investopedia.com/terms/l/line-of-best-fit.asp
+* Simple Linear Regression - Finding the equation of the line of best fit: http://www.ams.sunysb.edu/~zhu/ams571/Regression.pdf
+* numpy.mean: https://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html
+* numpy.polyfit documentation: https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html.
+* matplotlib.pyplot documentation: https://matplotlib.org/3.1.1/tutorials/introductory/pyplot.html
+* matplotlib.pyplot.plot(): https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html
+* matplotlib.pyplot.legend: https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.legend.html
+* matplotlib.pyplot.ylabel: https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.ylabel.html
+* matplotlib.pyplot.xlabel: https://matplotlib.org/3.1.0/tutorials/introductory/pyplot.html
+* matplotlib.pyplot.show() https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.show.html
+* numpy.corrcoef: https://docs.scipy.org/doc/numpy/reference/generated/numpy.corrcoef.html
+* Correlation in Python: http://benalexkeen.com/correlation-in-python/
+
+**Section 2.4 References:**
+* PYTHON MACHINE LEARNING EXAMPLE – LINEAR REGRESSION: https://devarea.com/python-machine-learning-example-linear-regression/#.XdZkSej7TIU
+* Ordinary least squares: https://scikit-learn.org/stable/modules/linear_model.html#ordinary-least-squares
+* scikit learn.linear_model.LinearRegression: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+* numpy.polyfit documentation: https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html
+* Beginner's guide to regression in Python with Scikit learn: https://towardsdatascience.com/a-beginners-guide-to-linear-regression-in-python-with-scikit-learn-83a8f7ae2b4f
+* How to run linear regression in python scikit learn: https://bigdata-madesimple.com/how-to-run-linear-regression-in-python-scikit-learn/
+* Linear Regression — Python Implementation: https://towardsdatascience.com/linear-regression-python-implementation-ae0d95348ac4
+* .fit: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression.fit
+* .score: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression.score
+* Interpreting the Intercept in a Regression Model: https://www.theanalysisfactor.com/interpreting-the-intercept-in-a-regression-model/
+
+**Section 3.1 References**
+* The documentation for seaborn.pairplot is here: https://seaborn.pydata.org/generated/seaborn.pairplot.html
+* I read about seaborn.pairplot on the following blog post: https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166
+* Seaborn pairplot: https://pythonbasics.org/seaborn_pairplot/
+
+**Section 3.2 References**
+* Seaborn.catplot documentation: https://seaborn.pydata.org/generated/seaborn.catplot.html
+* Swarmplot(): https://seaborn.pydata.org/generated/seaborn.swarmplot.html#seaborn.swarmplot
+
+**Section 3.3 References**
+* pandas sum: https://data36.com/pandas-tutorial-2-aggregation-and-grouping/
+* Dataframe.sum(): https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sum.html
+* pandas.groupby in action: https://data36.com/pandas-tutorial-2-aggregation-and-grouping/
+* Blog post: https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
+* Dataframe.round(): https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.round.html
+* Dataframe.groupby.mean() - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.core.groupby.GroupBy.mean.html
+* Dataframe.groupby.sum() - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.core.groupby.GroupBy.sum.html
+* Seaborn.swarmplot(): https://seaborn.pydata.org/generated/seaborn.swarmplot.html#seaborn.swarmplot
+* Seaborn.boxplot(): https://seaborn.pydata.org/generated/seaborn.boxplot.html#seaborn.boxplot
+* Seaborn.stripplot(): https://seaborn.pydata.org/generated/seaborn.stripplot.html#seaborn.stripplot
+* Seaborn.violinplot documentation: https://seaborn.pydata.org/generated/seaborn.violinplot.html#seaborn.violinplot
+* Blog post: https://towardsdatascience.com/analyze-the-data-through-data-visualization-using-seaborn-255e1cd3948e
