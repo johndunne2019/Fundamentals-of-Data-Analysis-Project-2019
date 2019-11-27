@@ -152,7 +152,7 @@ The Python packages I used in section 1 to perform some analysis on the data set
 
 I read in the data set with pandas and returned some descriptive statistics about the data set using some functions within the pandas library.
 
-**Some of the functions within pandas that I used to analyse the dataset**
+* **Some of the functions within pandas that I used to analyse the dataset**
     * pandas.read_csv to read in the csv file to the pandas package. 
     * dataframe.head() to display the first 5 rows of the dataset. 
     * dataframe.tail() to display the last 5 rows of the dataset.
