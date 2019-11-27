@@ -153,16 +153,16 @@ The Python packages I used in section 1 to perform some analysis on the data set
 I read in the data set with pandas and returned some descriptive statistics about the data set using some functions within the pandas library.
 
 **Some of the functions within pandas that I used to analyse the dataset**
-* pandas.read_csv to read in the csv file to the pandas package. 
-* dataframe.head() to display the first 5 rows of the dataset. 
-* dataframe.tail() to display the last 5 rows of the dataset.
-* dataframe.describe() to return an overview of some basic statistics based on the dataset. 
-* dataframe.shape() to return the number of rows and columns in the dataset. 
-* dataframe.iloc to return a particular row of data from the dataset. 
-* dataframe.loc to return all rows of data in the dataset that have a certain condition such as all "male" and "smoker". 
-* dataframe.mean to return the mean of a row of data in the dataset.
-* dataframe.std to return the standard deviation of a row of data in the dataset.
-* dataframe.groupby to group the data set by variable.
+    * pandas.read_csv to read in the csv file to the pandas package. 
+    * dataframe.head() to display the first 5 rows of the dataset. 
+    * dataframe.tail() to display the last 5 rows of the dataset.
+    * dataframe.describe() to return an overview of some basic statistics based on the dataset. 
+    * dataframe.shape() to return the number of rows and columns in the dataset. 
+    * dataframe.iloc to return a particular row of data from the dataset. 
+    * dataframe.loc to return all rows of data in the dataset that have a certain condition such as all "male" and "smoker". 
+    * dataframe.mean to return the mean of a row of data in the dataset.
+    * dataframe.std to return the standard deviation of a row of data in the dataset.
+    * dataframe.groupby to group the data set by variable.
 
 * **Seaborn**
 
@@ -175,7 +175,7 @@ I used Seaborn to load in the data set and output some plots based on the data s
 
 ##  Section 2: Regression
 
-In this section I discussed and analysed whether there is a relationship between the total bill and tip amount.
+**In this section I discussed and analysed whether there is a relationship between the total bill and tip amount.**
 
  In regression analysis their is a dependent variable and an independent variable: 
 
@@ -188,12 +188,15 @@ In this case I want to analyse if there is a relationship between total bill and
 * The independent variable is - total bill
 
 **Section 2.2:**
+
 First I used Seaborn to plot the regression line with the lmplot() and regplot() functions. The slope and intercept values are not returned using these functions but it gave me a good visual look at the regression line by calling these functions. I also had a look at the "hue", "markers" and "col" parameters with lmplot().
 
 **Section 2.3:**
+
 After viewing the lecture series of linear regression, I added a section to the jupyter notebook looking at simple linear regression and the best fit line. The slope and intercept of a best fit line can be calculated using numpy.polyfit or by using a calculation that I have explained in the notebook. After calculating the slope and intercept of the best fit line, I plotted the actual data points and the best fit line using matplotlib following the example we saw in lecture videos as a guide. I calculated the R Squared value of the best fitting line using numpy.corrcoef. The R Squared value is a measure of the strenght of the relationship between total bill and tip amount. 
 
 **Section 2.4:**
+
 I added another section looking at how Scikit learn can be used to calculate the slope, intercept and R Squared values of the best fit line. The linear regression model is imported from Scikit learn, x and y variables are passed in, and the the .fit command is called to fit the model to these variables. The following commands are then run:
 
 * .intercept - returns the intercept of the best fit line.
