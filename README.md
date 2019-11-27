@@ -71,18 +71,6 @@ The official Seaborn documentation is here: https://seaborn.pydata.org/index.htm
 ## pandas
 Python Data Analysis Library is a Python package than can be used to analyse data sets such as the Tips data set. I used pandas to do some basic descriptive statistics on the Tips data set. pandas can deal with both strings and floating point numbers and so is a good package to use to analyse the Tips data set. The official pandas documentation is located here: https://pandas.pydata.org/ and there is a useful tutorial here: 10 minutes to pandas: https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html. 
 
-**Some of the functions within pandas that I used to analyse the dataset**
-* pandas.read_csv to read in the csv file to the pandas package. 
-* dataframe.head() to display the first 5 rows of the dataset. 
-* dataframe.tail() to display the last 5 rows of the dataset.
-* dataframe.describe() to return an overview of some basic statistics based on the dataset. 
-* dataframe.shape() to return the number of rows and columns in the dataset. 
-* dataframe.iloc to return a particular row of data from the dataset. 
-* dataframe.loc to return all rows of data in the dataset that have a certain condition such as all "male" and "smoker". 
-* dataframe.mean to return the mean of a row of data in the dataset.
-* dataframe.std to return the standard deviation of a row of data in the dataset.
-* dataframe.groupby to group the data set by variable.
-
 ## Scikit learn
 
 ## matplotlib
@@ -116,7 +104,7 @@ I found the below explanation on the background and contents of the Tips data se
 
 "In one restaurant, a food server recorded the following data on all customers they served during an interval of two and a half months in early 1990. The restaurant, located in a suburban shopping mall, was part of a national chain and served a varied menu. In observance of local law, the restaurant offered to seat in a non-smoking section to patrons who requested it. Each record includes a day and time, and taken together, they show the server’s work schedule."
 
-Quote taken from: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
+Source: https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
 
 **What data is captured in the Tips dataset?**
 The following is a breakdown of the data that is captured in the Tips dataset:
@@ -135,43 +123,119 @@ The Python packages I used in section 1 to perform some analysis on the data set
 
 * pandas
 
+**Some of the functions within pandas that I used to analyse the dataset**
+* pandas.read_csv to read in the csv file to the pandas package. 
+* dataframe.head() to display the first 5 rows of the dataset. 
+* dataframe.tail() to display the last 5 rows of the dataset.
+* dataframe.describe() to return an overview of some basic statistics based on the dataset. 
+* dataframe.shape() to return the number of rows and columns in the dataset. 
+* dataframe.iloc to return a particular row of data from the dataset. 
+* dataframe.loc to return all rows of data in the dataset that have a certain condition such as all "male" and "smoker". 
+* dataframe.mean to return the mean of a row of data in the dataset.
+* dataframe.std to return the standard deviation of a row of data in the dataset.
+* dataframe.groupby to group the data set by variable.
+
 I read in the data set with pandas and returned some descriptive statistics about the data set using some functions within the pandas library.
 
 * Seaborn
 
 I used Seaborn to read in the data set and output some plots based on the data set and I explained how the different types of plots work and why they would be used in analysing a data set.
 
+**Some of the functions within Seaborn that I used to analyse the dataset**
+
+
 ##  Section 2: Regression
 
-In this section I discussed and analysed whether there is a relationship between the total bill and tip amount. I did this by using Seaborn to plot the regression line with the lmplot() and regplot() functions. I also added a section to the jupyter notebook looking at simple linear regression and the best fit line. The slope, intercept and R Squared values of a best fit line can be calculated using numpy.polyfit or by using a calculation that I have explained in the notebook. I added another section looking at how Scikit learn can be used to calculate the slope, intercept and R Squared values of the best fit line. 
+In this section I discussed and analysed whether there is a relationship between the total bill and tip amount.
+
+ In regression analysis their is a dependent variable and an independent variable: 
+
+* Dependent variable - the variable you are trying to understand or predict
+* Independent variable - the factors that have an affect on the dependent variable
+
+In this case I want to analyse if there is a relationship between total bill and tip amount. So I could say:
+
+* The dependent variable is - tip
+* The independent variable is - total bill
+
+**Section 2.2:**
+First I used Seaborn to plot the regression line with the lmplot() and regplot() functions. The slope and intercept values are not returned using these functions but it gave me a good visual look at the regression line by calling these functions. I also had a look at the "hue", "markers" and "col" parameters with lmplot().
+
+**Section 2.3:**
+After viewing the lecture series of linear regression, I added a section to the jupyter notebook looking at simple linear regression and the best fit line. The slope and intercept of a best fit line can be calculated using numpy.polyfit or by using a calculation that I have explained in the notebook. After calculating the slope and intercept of the best fit line, I plotted the actual data points and the best fit line using matplotlib following the example we saw in lecture videos as a guide. I calculated the R Squared value of the best fitting line using numpy.corrcoef. The nd R Squared value is a measure of the strenght of the relationship between total bill and tip amount. 
+
+**Section 2.4:**
+I added another section looking at how Scikit learn can be used to calculate the slope, intercept and R Squared values of the best fit line. The linear regression model is imported from Scikit learn, x and y variables are passed in, and the the .fit command is called to fit the model to these variables. The following commands are then run:
+
+* .intercept - returns the intercept of the best fit line.
+* .coef - returns the slope of the best fit line.
+* .score - returns the R Squared values of the best fit line.
 
 **Regression - main findings:**
 * The results of this regression analysis showed there is a relationship between total bill and tip amounts.
-* The R-squared value of the best fit line is: 0.45661658635167635 which shows that 45.6% of the data is accounted for by the regression model.
-* The slope of the best fit line was returned as: 0.10502452
-* The y intercept of the best fit line was returned as: 0.92026961
-* This shows that their is a reasonably strong relationship between total bill and tip amount but that other factors may also play their part in determining tip amount etc.
+* From numpy.polyfit and Scikit learn linear regression model:
+    * The slope of the best fit line was returned as: 0.10502452
+    * The y intercept of the best fit line was returned as: 0.92026961
+* From numpy.corrcoef and Scikit learn linear regression model the R-squared value was returned as: 0.45661658635167635 which I interpret to mean 45.6% of the data is accounted for by the regression model.
+* This shows that their is a relationship between total bill and tip amount but that other factors may also play their part in determining tip amount etc.
 
 
 ## Section 3: Relationship between the variables in the Tips data set
 
-In this section I analysed the relationship between some of the variables in the data set. I used Seaborn.Pairplot to plot the relationship between variables in the data set. I also used Seaborn.catplot to plot the relationship between total bill and tip amounts and the smoker variable in the Tips data set. I used pandas to analyse the relationship between some of the variables in the Tips data set and Seaborn to plot some different views of the relationship between these variables. I used the groupby function within pandas to group the total bill and tip amounts by some of the variables in the data set such as smoker, sex, day, time and day and time combined. This allowed me to calculate the mean and sum amounts broken out by these variables in order to see if any relationship exists between these variables and the bill and tip amounts. I used Seaborn to plot some of the findings.
+In this section I analysed the relationship between some of the variables in the data set. I used Seaborn.Pairplot to plot the relationship between variables in the data set. I also used Seaborn.catplot to plot the relationship between total bill and tip amounts and the smoker variable in the Tips data set. I used pandas to analyse the relationship between some of the variables in the Tips data set and Seaborn to plot some different views of the relationship between these variables. I used the groupby function within pandas to group the total bill and tip amounts by some of the variables in the data set such as smoker, sex, day, time and day and time combined. This allowed me to calculate the mean and sum amounts broken out by these variables in order to see if any relationship exists between these variables and the bill and tip amounts. I used Seaborn to plot some of the findings in order to visualise the relationship between the variables. 
+
+Some of the Seaborn plots I used in this section include:
+* Seaborn.relplot()
+* Seaborn.lmplot()
+* Seaborn.catplot()
+* Seaborn.barplot()
+* Seaborn.boxplot()
+* Seaborn.swarmplot()
+* Seaborn.stripplot()
+* Seaborn.violinplot()
 
 **Relationship between variables- main findings:**
- * There is a relationship between total bill and tip amounts. The higher the total bill amount, the higher the tip amount generally is.
- * Looking at the other variables in the data set:
-    * **Smoker:**
-    Over the course of the 4 days non smoker accounted for higher bill and tip revenue than smoker.
-    * **Sex:**
+* My findings from this section:
 
+    * **Is there a relationship between Smoker and total bill and tip amounts?:**
+        * The mean bill is slightly higher for smoker and the tip amount is also slightly higher.
+        * The mean party size is higher for smoker also. 
+        * However, over the course of the 4 days non smoker accounted for higher bill and tip revenue. 
+        * I conclude here that smoker/non smoker does not have a direct relationship with tip revenue but we could expect more people to seat in the non smoking section which will in turn generate higher tip revenue.
+        * A waiter/waitress looking at this may prefer to work in the non smoking section.
 
-    * **Day:**
+    * **Is there a relationship between Sex and total bill and tip amounts?:**
+        * The mean bill and tip amounts are larger for male.
+        * The mean size is also slightly larger for male.
+        * Over the 4 days the revenue generated for bills paid by male was much higher than female
 
-    * **Time:**
+    * **Is there a relationship between Day and total bill and tip amounts?**
+        * The highest bill and tip revenue and most amount of customers in the restaurant are recorded on Saturday.
+        * The lowest bill and tip revenue and least amount of customers was recorded on Friday.
+        * I can see the day with the largest mean party size is Sunday with the smallest mean party size on Friday.
+        * The largest mean bill amount is on Sunday with the smallest mean bill amount on Friday.
+        * The day with the largest mean tip amount is also Sunday and the smallest tip amount is also Friday.
+        * I conclude that day has an impact on tip amounts, as there are more parties likely to dine in the restaurant on Saturday and Sunday and thus higher tip revenue should be generated.
 
- TO BE FINISHED LATER
+    * **Is there a relationship between Time and total bill and tip amounts?:**
+        * Dinner yields much higher bill and tip revenue than lunch.
+        * It must be noted dinner entries are recorded for 4 days and lunch for 2 days in the data set.
+        * The mean bill, tip and party size are greater at dinner time than at lunch time.
+        * Looking at this, a waiter may prefer to work at dinner time that at lunch time.
 
+    * **Day and Time combined:**
+        * The highest mean tip amount is Sunday at dinner time.
+        * The lowest mean tip amount is Friday at lunch time.
+        * The highest mean tip is recorded against the highest mean party size and highest mean bill amount.
+        * The lowest mean tip is recorded against the lowest mean bill amount and the lowest mean party size.
+        * This suggests me their is some relationship between party size and bill and tip amounts.
+        * The restaurant appears to only open for lunch on Thursday and Friday.
+        * Dinner on Thursday was extremely quiet with only 2 customers.
+        * There were 219 customers for dinner on Saturday and 216 for dinner on Sunday.
+        * Interestingly lunch time on Thursday was quiet busy compared with dinner time on Thursday whereas the opposite was the case on Friday with dinner being busier than lunch.
+        * These statistics could be used by the restaurant to predict their busy and quiet times and plan accordingly.
 
+ 
 
 
 ## References 
