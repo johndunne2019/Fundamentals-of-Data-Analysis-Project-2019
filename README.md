@@ -148,7 +148,7 @@ The following is a breakdown of the data that is captured in the Tips dataset:
 
 The Python packages I used in section 1 to perform some analysis on the data set were:
 
-* pandas
+* **pandas**
 
 I read in the data set with pandas and returned some descriptive statistics about the data set using some functions within the pandas library.
 
@@ -164,7 +164,7 @@ I read in the data set with pandas and returned some descriptive statistics abou
 * dataframe.std to return the standard deviation of a row of data in the dataset.
 * dataframe.groupby to group the data set by variable.
 
-* Seaborn
+* **Seaborn**
 
 I used Seaborn to load in the data set and output some plots based on the data set and I explained how the different types of plots work and why they would be used in analysing a data set.
 
